@@ -15,5 +15,12 @@ def vig_zen(key=input("\n==============\nHit your key :\n\n"),
           f"\n======================================================\n\n"
           f"{vigenere(this.s, key, encode)}")
 
+    zen = "".join(this.d.get(c, c) for c in this.s)
+
+    print(f"\n========================================================="
+          f"\nZen Python transcription with vigenere code by your key :"
+          f"\n========================================================="
+          f"\n\n{vigenere(zen, key, encode)}")
+
 
 vig_zen()
